@@ -1,4 +1,4 @@
-node('MacOSXSlave'){
+node('centos7Agent'){
     wrap([$class: 'MaskPasswordsBuildWrapper', varPasswordPairs: [[password: 'tsweet', var: 'myPassword']]]) {
     def test='myPassword'
     echo test
